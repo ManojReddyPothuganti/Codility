@@ -1,0 +1,22 @@
+String fancyRide(int l, double[] fares) {
+    String s="";
+    Double product = 0.0 ;
+    int i = 0;
+    
+    for(;i<fares.length;i++)
+    {
+      product = l * fares[i];
+        if(product > 20) {break;}
+        
+    }
+    switch(i-1)
+    {
+        case 0 : s= "UberX"; break;
+        case 1 : s= "UberXL"; break;
+            case 2 : s= "UberPlus"; break;
+            case 3 : s= "UberBlack"; break;
+            case 4 : s= "UberSUV"; break;
+            default : break;
+    }
+ return s;
+}
